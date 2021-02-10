@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ahmed stack';
-  myFirstNumber = 156.500000000 ;
+  /*myFirstNumber = 156.500000000 ;
   today = new Date();
 
   salary = 2000;
@@ -63,8 +63,12 @@ export class AppComponent {
   btnClicked(email){
     console.log("clicked",email);
     
-  }
+  }*/
 
+  /********* component ******** */
+
+
+  
 
   
 }

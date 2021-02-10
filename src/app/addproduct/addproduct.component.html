@@ -1,0 +1,62 @@
+<app-navbar></app-navbar>
+
+
+<div class="container">
+    <div class="row my-5">
+      <div class="col-sm-3">
+        <h3>Menu</h3>
+  
+        <app-sidemenu></app-sidemenu>
+        
+  
+      </div>
+      <div class="col-sm-9">
+        
+        <div class="row">
+          
+          <h3>add a new product</h3>
+          
+
+
+          <div class="col-sm-12">
+            <form [formGroup]="addProduct" (ngSubmit)=" addProduit() " >
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Titre <span *ngIf="addProduct.value.titre == '' " class="text-danger">*</span> </label>
+                  <input formControlName="titre" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter product name">
+                
+                  <div class="alert alert-warning" *ngIf="! addProduct.controls.titre.valid ">
+                      this feild should contains an email address
+                  </div>
+
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Price <span *ngIf="addProduct.value.price == '' " class="text-danger">*</span></label>
+                  <input formControlName="price" type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter price">
+                </div>
+
+                <h6>Client</h6>
+
+                <div formGroupName="client">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">phone <span *ngIf="addProduct.value.price == '' " class="text-danger">*</span></label>
+                        <input formControlName="phone" type="tel" class="form-control" id="exampleInputPassword1" placeholder="Enter price">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">address <span *ngIf="addProduct.value.price == '' " class="text-danger">*</span></label>
+                        <input formControlName="address" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter price">
+                      </div>
+
+
+                </div>
+
+                <button type="submit" class="btn btn-primary" [disabled]="! addProduct.valid ">ADD</button>
+              </form>
+          </div>
+  
+  
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
