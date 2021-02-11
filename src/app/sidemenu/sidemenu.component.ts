@@ -14,8 +14,14 @@ export class SidemenuComponent implements OnInit {
     {
       titre: "shop",
       icon :"fa-shopping-cart",
-      url: '/shop'
+      url: '/shop',
     },
+    {
+      titre: "Cart",
+      icon :"fa-shopping-cart",
+      url: '/cart'
+    },
+    
     {
       titre: "about",
       icon :"fa-question-circle",
@@ -26,6 +32,7 @@ export class SidemenuComponent implements OnInit {
       icon :"fa-plus",
       url : "/add"
     },
+
     
     
     

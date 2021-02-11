@@ -1,0 +1,33 @@
+<app-navbar p="x"></app-navbar>
+  
+  
+
+<div class="container">
+    <div class="row my-5">
+      <div class="col-sm-3">
+        <h3>Menu</h3>
+  
+        <app-sidemenu></app-sidemenu>
+        
+  
+      </div>
+      <div class="col-sm-9">
+        
+        <div class="row">
+          
+          <div class="col-sm-4" *ngFor="let p of shoppingCart">
+            <app-produit title="{{p.title}}" price="{{p.price}}" imgURL="{{p.imgURL}}"></app-produit>
+          </div>
+
+          <div class="col-sm-12">
+              <h1>TOTAL : {{ total | currency }} </h1>
+          </div>
+          
+  
+  
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>

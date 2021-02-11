@@ -12,16 +12,19 @@
   
       </div>
       <div class="col-sm-9">
-        
+
         <div class="row">
-          
-          <div class="col-sm-4" *ngFor="let p of products">
-            <app-produit title="{{p.title}}" price="{{p.price}}" imgURL="{{p.imgURL}}"></app-produit>
-          </div>
-          
-  
-  
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link " routerLinkActive="active" routerLink="/shop/neouf">Noeuf</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  routerLinkActive="active" routerLink="/shop/occassion">Occasion</a>
+            </li>
+          </ul>
         </div>
+        
+        <router-outlet></router-outlet>
         
       </div>
       

@@ -11,6 +11,10 @@ import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import { CartComponent } from './cart/cart.component';
+import { DetailsproduitComponent } from './detailsproduit/detailsproduit.component';
+import { OccassionComponent } from './occassion/occassion.component';
+import { NeufComponent } from './neuf/neuf.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
     ShopComponent,
     AboutComponent,
     NavbarComponent,
-    AddproductComponent
+    AddproductComponent,
+    CartComponent,
+    DetailsproduitComponent,
+    OccassionComponent,
+    NeufComponent
   ],
   imports: [
     BrowserModule,

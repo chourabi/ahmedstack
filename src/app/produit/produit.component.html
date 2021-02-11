@@ -4,6 +4,8 @@
           <img src="{{imgURL}}" width="100%" alt="">
           <h4>{{title}}</h4>
           <p>{{ price | currency }}</p>
+          <button class="btn btn-secondary btn-sm" (click)="buyNow()" >buy</button>
+          <a class="btn btn-sm btn-secondary" [routerLink]="   '/shop/'+title   ">voir details</a>
       </div>
     </div>
 
